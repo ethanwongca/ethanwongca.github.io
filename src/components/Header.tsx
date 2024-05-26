@@ -5,7 +5,6 @@ const Header: React.FC = () => {
   return (
     <header className="bg-gray-900 text-white p-4">
       <nav className="container mx-auto flex justify-between">
-        <div className="text-xl font-bold"><NavLink to="/"> Ethan Parker Wong </NavLink></div>
         <div className="flex space-x-4">
           <NavLink 
             to="/" 
