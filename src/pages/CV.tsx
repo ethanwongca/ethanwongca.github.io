@@ -3,22 +3,22 @@ import React from 'react';
 const Experience: React.FC = () => {
   return (
     <div className="container mx-auto p-4">
-      <div className="flex">
+      <div className="flex flex-col lg:flex-row">
         {/* Sidebar */}
-        <div className="w-1/4 p-4">
+        <div className="hidden lg:block lg:w-1/4 p-4">
           <ul className="space-y-4">
             <li><a href="#basics" className="text-gray-800 hover:text-pink-600">Basics</a></li>
             <li><a href="#experience" className="text-gray-800 hover:text-pink-600">Experience</a></li>
-            <li><a href="#volunteer" className="text-gray-800 hover:text-pink-600">Volunteer</a></li>
+            <li><a href="#volunteering" className="text-gray-800 hover:text-pink-600">Volunteering</a></li>
             <li><a href="#education" className="text-gray-800 hover:text-pink-600">Education</a></li>
             <li><a href="#awards" className="text-gray-800 hover:text-pink-600">Awards</a></li>
             <li><a href="#publications" className="text-gray-800 hover:text-pink-600">Publications</a></li>
             <li><a href="#skills" className="text-gray-800 hover:text-pink-600">Skills</a></li>
           </ul>
         </div>
-        
+
         {/* Main Content */}
-        <div className="w-3/4 p-4 space-y-8">
+        <div className="w-full lg:w-3/4 p-4 space-y-8">
           <div id="basics" className="bg-white shadow rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-4">Basics</h2>
             <p><strong>Name:</strong> Ethan Parker Wong</p>
@@ -69,8 +69,8 @@ const Experience: React.FC = () => {
             </div>
           </div>
 
-          <div id="volunteer" className="bg-white shadow rounded-lg p-6">
-            <h2 className="text-2xl font-bold mb-4">Volunteer</h2>
+          <div id="volunteering" className="bg-white shadow rounded-lg p-6">
+            <h2 className="text-2xl font-bold mb-4">Volunteering</h2>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
                 <p><strong>Organization:</strong> McGill Computer Science Undergraduate Society</p>
                 <p><strong>Role:</strong> President FYC</p>
@@ -139,7 +139,6 @@ const Experience: React.FC = () => {
                 <p><strong>Details:</strong> Won for ideas in empowering regugees with technology over 350 of the top international MUNs</p>
             </div>
           </div>
-
 
           <div id="publications" className="bg-white shadow rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-4">Publications</h2>
