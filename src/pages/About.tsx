@@ -16,7 +16,7 @@ const About: React.FC = () => {
             Hello, my name is Ethan and I am Computer Science Student at UBC. I am currently developing artificial intelligence tools for the <a href="https://www.linkedin.com/in/ethanparkerwong/" className="text-pink-500"> United Nations </a> and UBC. I am interested in software development, human computer interaction, and machine learning. On this portfolio you can find my resume, projects, and publications.
           </p>
           <p className="text-lg mb-4">
-            Besides computer science, I love being active. I have ran three half-marathons, have a black belt in Taekwondo, and I am preparing for my first century bike ride. I also love to travel and am always looking for new places to explore. Anywards enjoy!
+            Besides computer science, I love being active. I have ran three half-marathons, have a black belt in Taekwondo, and I am preparing for my first century bike ride. I also love to travel and am always looking for new places to explore. 
           </p>
           <p className="text-lg mb-4">
             Feel free to reach out to me on my <a href="mailto:ethanwongca@gmail.com" className="text-pink-600">email</a>, ethanwongca@gmail.com if any of my work interests you. I am always looking for new opportunities to learn and grow!
