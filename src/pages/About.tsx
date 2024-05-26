@@ -13,7 +13,7 @@ const About: React.FC = () => {
             <a href="ethanwongca.github.io" className="text-pink-600">Computer Science at UBC. </a> Vancouver, BC. <a href="https://www.linkedin.com/in/ethanparkerwong/" className="text-pink-600 hover:underline">Linkedin</a>.
           </p>
           <p className="text-lg mb-4">
-            Hello, my name is Ethan and I am Computer Science Student at UBC. I am currently developing artificial intelligence tools for the <a href="https://www.linkedin.com/in/ethanparkerwong/" className="text-pink-500"> United Nations </a> and UBC. I am interested in software development, human computer interaction and machine learning. On this portfolio you can find my resume, projects, and publications.
+            Hello, my name is Ethan and I am Computer Science Student at UBC. I am currently developing artificial intelligence tools for the <a href="https://www.linkedin.com/in/ethanparkerwong/" className="text-pink-500"> United Nations </a> and UBC. I am interested in software development, human computer interaction, and machine learning. On this portfolio you can find my resume, projects, and publications.
           </p>
           <p className="text-lg mb-4">
             Besides computer science, I love being active. I have ran three half-marathons, have a black belt in Taekwondo, and I am preparing for my first century bike ride. I also love to travel and am always looking for new places to explore. Anywards enjoy!
