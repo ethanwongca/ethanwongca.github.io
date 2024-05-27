@@ -13,7 +13,7 @@ const Socials: React.FC = () => {
           </div>
           <p className="text-gray-700">ethanwongca@gmail.com</p>
         </a>
-        <a href="https://www.linkedin.com/in/ethanparkerwong" className="block bg-white shadow rounded-lg p-4 hover:shadow-md">
+        <a href="https://www.linkedin.com/in/ethanwongca/" className="block bg-white shadow rounded-lg p-4 hover:shadow-md">
           <div className="flex items-center mb-2">
             <FaLinkedin className="text-black w-6 h-6 mr-2" />
             <h2 className="text-xl font-bold">LinkedIn</h2>
