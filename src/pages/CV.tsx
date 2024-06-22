@@ -41,7 +41,7 @@ const Experience: React.FC = () => {
               <p><strong>Company:</strong> University of British Columbia</p>
               <p><strong>Role:</strong> Research Assistant</p>
               <p><strong>Duration:</strong> March 2022 - Present</p>
-              <p><strong>Responsibilities:</strong> Did data visualization and automated excel files for a hepatic blood flow literature review. Currently doing AI and epidimiology.</p>
+              <p><strong>Responsibilities:</strong> Did data visualization and automated excel files for a hepatic blood flow literature review. Currently doing AI and epidemiology.</p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> McGill University</p>
@@ -53,19 +53,19 @@ const Experience: React.FC = () => {
               <p><strong>Company:</strong> Google</p>
               <p><strong>Role:</strong> Computer Science Research Mentorship Scholar</p>
               <p><strong>Duration:</strong> September 2023 - December 2023 </p>
-              <p><strong>Responsibilities:</strong> Selected in a three month program to be mentored by a Google Employee.</p>
+              <p><strong>Responsibilities:</strong> Selected in a three month program to be mentored by a Google Employee in HCI and NLP.</p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> APOLLO Insurance</p>
               <p><strong>Role:</strong> Agency Intern</p>
               <p><strong>Duration:</strong> June 2023 - August 2023 </p>
-              <p><strong>Responsibilities:</strong> Managed an insurance database. </p>
+              <p><strong>Responsibilities:</strong> Managed an insurance database with SQL. </p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> Koi Continuity</p>
               <p><strong>Role:</strong> Software Engineer Intern</p>
               <p><strong>Duration:</strong> October 2022 - June 2023</p>
-              <p><strong>Responsibilities:</strong> Developed the business product using full-stack development.</p>
+              <p><strong>Responsibilities:</strong> Developed the business product using full-stack JS development.</p>
             </div>
           </div>
 
@@ -136,7 +136,7 @@ const Experience: React.FC = () => {
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
                 <p><strong>Award:</strong> Special Mention in UNHCR's MUN Refugee Challenge</p>
                 <p><strong>Year:</strong> 2022</p>
-                <p><strong>Details:</strong> Won for ideas in empowering regugees with technology over 350 of the top international MUNs</p>
+                <p><strong>Details:</strong> Won for ideas in empowering refugees with technology over 350 of the top international MUNs</p>
             </div>
           </div>
 
@@ -145,13 +145,13 @@ const Experience: React.FC = () => {
             <p><strong>Title:</strong> Analyzing Language Bias Between French and English in Conventional Multilingual Sentiment Analysis Models</p>
             <p><strong>Journal:</strong> arXiv</p>
             <p><strong>Year:</strong> 2024</p>
-            <p><strong>Details:</strong> Wrote a paper on bias in sentiment analysis models. </p>
+            <p><strong>Details:</strong> Wrote a paper on bias in sentiment analysis machine learning models. </p>
           </div>
 
           <div id="skills" className="bg-white shadow rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-4">Skills</h2>
             <p><strong>Programming Languages:</strong> Python, JavaScript, R, TypeScript, Bash, C, Java</p>
-            <p><strong>Technologies:</strong> React, Node.js, SQL, Power BI</p>
+            <p><strong>Technologies:</strong> React, Node.js, SQL, Power BI, AWS</p>
             <p><strong>Others:</strong> Data Analysis, Machine Learning</p>
           </div>
 
