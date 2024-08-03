@@ -32,6 +32,12 @@ const Experience: React.FC = () => {
           <div id="experience" className="bg-white shadow rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-4">Experience</h2>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
+              <p><strong>Company:</strong> University of British Columbia NLP Group</p>
+              <p><strong>Role:</strong> Research Assistant</p>
+              <p><strong>Duration:</strong> August 2024 - Present</p>
+              <p><strong>Responsibilities:</strong> Writing Python scripts for web scraping and developing NLP models.</p>
+            </div>
+            <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> United Nations</p>
               <p><strong>Role:</strong> Artificial Intelligence Fellow</p>
               <p><strong>Duration:</strong> May 2024 - Present</p>
@@ -40,7 +46,7 @@ const Experience: React.FC = () => {
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> University of British Columbia</p>
               <p><strong>Role:</strong> Research Assistant</p>
-              <p><strong>Duration:</strong> March 2022 - Present</p>
+              <p><strong>Duration:</strong> March 2022 - April 2024</p>
               <p><strong>Responsibilities:</strong> Did data visualization and automated excel files for a hepatic blood flow literature review. Currently doing AI and epidemiology.</p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
@@ -87,7 +93,7 @@ const Experience: React.FC = () => {
               <p><strong>Company:</strong> Canadian Online Model United Nations</p>
               <p><strong>Role:</strong> Founder</p>
               <p><strong>Duration:</strong> June 2020 - June 2023</p>
-              <p><strong>Responsibilities:</strong> Founded a Model United Naitons, that won two awards from UNHCR. The conference had 300 delegates from 37 countries attend.</p>
+              <p><strong>Responsibilities:</strong> Founded a Model United Nations, that won two awards from UNHCR. The conference had 300 delegates from 37 countries attend.</p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> Vancouver Care Packages</p>
