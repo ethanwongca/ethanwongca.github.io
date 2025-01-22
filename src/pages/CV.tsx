@@ -82,6 +82,12 @@ const Experience: React.FC = () => {
           <div id="volunteering" className="bg-white shadow rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-4">Volunteering</h2>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
+                <p><strong>Organization:</strong> UBC Computer Science Student Society</p>
+                <p><strong>Role:</strong> External Officer </p>
+                <p><strong>Duration:</strong> October 2024 - Present</p>
+                <p><strong>Responsibilities:</strong> Run data structures, algorithms, and git workshops </p>
+            </div>
+            <div className="border-l-4 border-gray-300 pl-4 mb-4">
                 <p><strong>Organization:</strong> McGill Computer Science Undergraduate Society</p>
                 <p><strong>Role:</strong> President FYC</p>
                 <p><strong>Duration:</strong> October 2023 - April 2024</p>
