@@ -14,7 +14,7 @@ const About: React.FC = () => {
           </p>
           <p className="text-lg mb-4">
             Hello! My name is Ethan and I am a Computer Science Student at UBC. I am an aspiring research scientist who is an incoming business intelligence engineer intern at <a href="https://www.linkedin.com/in/ethanwongca/" className="text-pink-500">  Amazon </a>. I have developed artificial intelligence tools for the <a href="https://www.linkedin.com/in/ethanwongca/" className="text-pink-500">  United Nations. </a>
-            I am currently doing deep learning research at UBC's Natural Language Processing Group and Human Artificial Intelligence Lab. My research interests are in natural language processing, human-computer interaction, and human-centered computing. On this portfolio, you can find my resume, projects, and publications.
+            I am currently doing deep learning research at UBC's SLIME-lab and Human Artificial Intelligence Lab. My research interests are in natural language processing and multimodal learning. On this portfolio, you can find my resume, projects, and publications.
           </p>
           <p className="text-lg mb-4">
             Besides computer science, I love being active. I have run four half-marathons, have a black belt in Taekwondo, and I am preparing for my first century bike ride. I also love to travel and am always looking for new places to explore. 

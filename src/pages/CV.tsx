@@ -48,12 +48,6 @@ const Experience: React.FC = () => {
               <p><strong>Responsibilities:</strong> Developed artificial intelligence tools and evaluated open-source generative artificial intelligence at the UN-OICT Innovation Unit. </p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
-              <p><strong>Company:</strong> University of British Columbia</p>
-              <p><strong>Role:</strong> Research Assistant</p>
-              <p><strong>Duration:</strong> March 2022 - April 2024</p>
-              <p><strong>Responsibilities:</strong> Supervised by Ph.D. Candidate Lisa Cheng. Worked on a hepatic blood flow literature review. </p>
-            </div>
-            <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> McGill University</p>
               <p><strong>Role:</strong> TEAM Mentor</p>
               <p><strong>Duration:</strong> January 2024 - April 2024</p>
@@ -76,6 +70,12 @@ const Experience: React.FC = () => {
               <p><strong>Role:</strong> Software Engineer Intern</p>
               <p><strong>Duration:</strong> October 2022 - June 2023</p>
               <p><strong>Responsibilities:</strong> Developed the business product using full-stack JS development.</p>
+            </div>
+            <div className="border-l-4 border-gray-300 pl-4 mb-4">
+              <p><strong>Company:</strong> University of British Columbia</p>
+              <p><strong>Role:</strong> Research Assistant</p>
+              <p><strong>Duration:</strong> March 2022 - May 2023</p>
+              <p><strong>Responsibilities:</strong> Supervised by Ph.D. Candidate Lisa Cheng. Worked on a hepatic blood flow literature review. </p>
             </div>
           </div>
 
