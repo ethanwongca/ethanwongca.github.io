@@ -25,7 +25,7 @@ const Experience: React.FC = () => {
             <p><strong>Email:</strong> <a href="mailto:ethanwongca@gmail.com" className="text-pink-600">ethanwongca@gmail.com</a></p>
             <p><strong>Phone:</strong> +1 (236) 889-3873</p>
             <p><strong>URL:</strong> <a href="https://ethanwongca.github.io/" className="text-pink-600">https://ethanwong.ca/</a></p>
-            <p><strong>Summary:</strong>  A computer science student with incoming FAANG experience and an interest in human-centered computing. </p>
+            <p><strong>Summary:</strong>  A computer science student with incoming FAANG experience and an interest in natural language processing and computational social science. </p>
           </div>
 
           <div id="experience" className="bg-white shadow rounded-lg p-6">
@@ -34,24 +34,37 @@ const Experience: React.FC = () => {
               <p><strong>Company:</strong> Amazon</p>
               <p><strong>Role:</strong> Incoming Business Intelligence Engineer Intern</p>
               <p><strong>Duration:</strong> Incoming May 2025 </p>
+              <p><strong>Responsibilities:</strong> Store Organization using Python and SQL. </p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
-              <p><strong>Company:</strong> University of British Columbia Natural Language Processing Group</p>
+              <p><strong>Company:</strong> University of British Columbia</p>
               <p><strong>Role:</strong> Research Assistant</p>
+              <p><strong>Duration:</strong> January 2025 - Present</p>
+              <p><strong>Responsibilities:</strong> Research at the Human Artificial Intelligence Interaction Lab under Professor Cristina Conati. Working on Deep Learning Models. </p>
+            </div>
+            <div className="border-l-4 border-gray-300 pl-4 mb-4">
+              <p><strong>Company:</strong> University of British Columbia</p>
+              <p><strong>Role:</strong> Natural Language Processing Research Assistant</p>
               <p><strong>Duration:</strong> August 2024 - Present</p>
-              <p><strong>Responsibilities:</strong> Supervision under Professor Jian Zhu and funding via UBC Work Learn. Working on NLP and Computational Social Sciences Research. </p>
+              <p><strong>Responsibilities:</strong> Research at the SLIME-Lab under Professor Jian Zhu and funding via UBC Work Learn. Working on NLP and Computational Social Sciences Research. </p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> United Nations</p>
               <p><strong>Role:</strong> Artificial Intelligence Fellow</p>
               <p><strong>Duration:</strong> May 2024 - August 2024</p>
-              <p><strong>Responsibilities:</strong> Developed artificial intelligence tools and evaluated open-source generative artificial intelligence at the UN-OICT Innovation Unit. </p>
+              <p><strong>Responsibilities:</strong> Developed artificial intelligence tools and evaluated open-source generative artificial intelligence at the UN OICT Innovation Unit. </p>
+            </div>
+            <div className="border-l-4 border-gray-300 pl-4 mb-4">
+              <p><strong>Company:</strong> McGill University</p>
+              <p><strong>Role:</strong> Undergraduate Researcher </p>
+              <p><strong>Duration:</strong> January 2024 - April 2024</p>
+              <p><strong>Responsibilities:</strong> Supervised Under Professor Faten M'hiri. Worked on fairness and mutlilingual natural language processing.</p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> McGill University</p>
               <p><strong>Role:</strong> TEAM Mentor</p>
               <p><strong>Duration:</strong> January 2024 - April 2024</p>
-              <p><strong>Responsibilities:</strong> Had office hours for over 400 students in McGill's COMP 202, COMP 250, and COMP 206.</p>
+              <p><strong>Responsibilities:</strong> Had office hours for over 400 students in McGill's COMP 202/204/208, COMP 250, and COMP 206.</p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> Google</p>
@@ -64,12 +77,6 @@ const Experience: React.FC = () => {
               <p><strong>Role:</strong> Agency Intern</p>
               <p><strong>Duration:</strong> June 2023 - August 2023 </p>
               <p><strong>Responsibilities:</strong> Managed an insurance database. </p>
-            </div>
-            <div className="border-l-4 border-gray-300 pl-4 mb-4">
-              <p><strong>Company:</strong> Koi Continuity</p>
-              <p><strong>Role:</strong> Software Engineer Intern</p>
-              <p><strong>Duration:</strong> October 2022 - June 2023</p>
-              <p><strong>Responsibilities:</strong> Developed the business product using full-stack JS development.</p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> University of British Columbia</p>
@@ -111,6 +118,7 @@ const Experience: React.FC = () => {
               <p><strong>Duration:</strong> March 2021 - April 2022</p>
               <p><strong>Responsibilities:</strong> Helped run a non-profit that was featured by CTV news.</p>
             </div>
+
           </div>
 
           <div id="education" className="bg-white shadow rounded-lg p-6">
