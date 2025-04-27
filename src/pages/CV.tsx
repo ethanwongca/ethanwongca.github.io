@@ -25,27 +25,27 @@ const Experience: React.FC = () => {
             <p><strong>Email:</strong> <a href="mailto:ethanwongca@gmail.com" className="text-pink-600">ethanwongca@gmail.com</a></p>
             <p><strong>Phone:</strong> +1 (236) 889-3873</p>
             <p><strong>URL:</strong> <a href="https://ethanwongca.github.io/" className="text-pink-600">https://ethanwong.ca/</a></p>
-            <p><strong>Summary:</strong>  A computer science student with incoming FAANG experience and an interest in natural language processing and computational social science. </p>
+            <p><strong>Summary:</strong>  A computer science student with incoming FAANG experience and an interest in natural language processing and human-centered AI. </p>
           </div>
 
           <div id="experience" className="bg-white shadow rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-4">Experience</h2>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> Amazon</p>
-              <p><strong>Role:</strong> Incoming Business Intelligence Engineer Intern</p>
-              <p><strong>Duration:</strong> Incoming May 2025 </p>
-              <p><strong>Responsibilities:</strong> Store Organization using Python and SQL. </p>
+              <p><strong>Role:</strong> Business Intelligence Engineer Intern</p>
+              <p><strong>Duration:</strong> May 2025 </p>
+              <p><strong>Responsibilities:</strong> Supply Chain Optimization (SCOT) Forecasting Team</p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> University of British Columbia</p>
               <p><strong>Role:</strong> Research Assistant</p>
-              <p><strong>Duration:</strong> January 2025 - Present</p>
-              <p><strong>Responsibilities:</strong> Research at the Human Artificial Intelligence Interaction Lab under Professor Cristina Conati. Working on Deep Learning Models. </p>
+              <p><strong>Duration:</strong> January 2025 - April 2025</p>
+              <p><strong>Responsibilities:</strong> Research at the Human Artificial Intelligence Interaction Lab under Professor Cristina Conati. Working with Deep Learning and Eye Tracking Research. </p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> University of British Columbia</p>
               <p><strong>Role:</strong> Natural Language Processing Research Assistant</p>
-              <p><strong>Duration:</strong> August 2024 - Present</p>
+              <p><strong>Duration:</strong> August 2024 - April 2025</p>
               <p><strong>Responsibilities:</strong> Research at the SLIME-Lab under Professor Jian Zhu and funding via UBC Work Learn. Working on NLP and Computational Social Sciences Research. </p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
@@ -91,7 +91,7 @@ const Experience: React.FC = () => {
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
                 <p><strong>Organization:</strong> UBC Computer Science Student Society</p>
                 <p><strong>Role:</strong> External Officer </p>
-                <p><strong>Duration:</strong> October 2024 - Present</p>
+                <p><strong>Duration:</strong> October 2024 - April 2025</p>
                 <p><strong>Responsibilities:</strong> Run data structures, algorithms, and git workshops </p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">

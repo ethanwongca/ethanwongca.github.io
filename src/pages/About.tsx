@@ -13,8 +13,8 @@ const About: React.FC = () => {
             Vancouver, BC. <a href="https://www.linkedin.com/in/ethanwongca/" className="text-pink-600 hover:underline">Linkedin</a>.
           </p>
           <p className="text-lg mb-4">
-            Hello! My name is Ethan and I am a Computer Science Student at UBC. I am an aspiring research scientist who is an incoming business intelligence engineer intern at <a href="https://www.linkedin.com/in/ethanwongca/" className="text-pink-500">  Amazon </a>. I have developed artificial intelligence tools for the <a href="https://www.linkedin.com/in/ethanwongca/" className="text-pink-500">  United Nations. </a>
-            I am currently doing deep learning research at UBC's SLIME-lab and Human Artificial Intelligence Lab. My research interests are in natural language processing and multimodal learning. On this portfolio, you can find my resume, projects, and publications.
+            Hello! My name is Ethan and I am a Computer Science Student at UBC. I am an aspiring machine learning engineer who is a business intelligence engineer intern at <a href="https://www.linkedin.com/in/ethanwongca/" className="text-pink-500">  Amazon's Supply Chain Optimization Forecasting Team</a>. I have developed artificial intelligence tools for the <a href="https://www.linkedin.com/in/ethanwongca/" className="text-pink-500">  United Nations. </a>
+            I have also done natural langauge processing and deep learning research at UBC's SLIME-lab and Human Artificial Intelligence Lab. My research interests are in natural language processing, multimodal learning, and human-centered AI. On this portfolio, you can find my resume, projects, and publications.
           </p>
           <p className="text-lg mb-4">
             Besides computer science, I love being active. I have run four half-marathons, have a black belt in Taekwondo, and I am preparing for my first century bike ride. I also love to travel and am always looking for new places to explore. 
