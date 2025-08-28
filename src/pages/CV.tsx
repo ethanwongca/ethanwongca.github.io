@@ -31,22 +31,28 @@ const Experience: React.FC = () => {
           <div id="experience" className="bg-white shadow rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-4">Experience</h2>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
+              <p><strong>Company:</strong> University of British Columbia SLIME-Lab</p>
+              <p><strong>Role:</strong> Research Assistant</p>
+              <p><strong>Duration:</strong> August 2025 - Present </p>
+              <p><strong>Responsibilities:</strong> LLM Interpretability and Speech LLMs</p>
+            </div>
+            <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> Amazon</p>
               <p><strong>Role:</strong> Business Intelligence Engineer Intern</p>
-              <p><strong>Duration:</strong> May 2025 - Present </p>
+              <p><strong>Duration:</strong> May 2025 - July 2025 </p>
               <p><strong>Responsibilities:</strong> Supply Chain Optimization Technologies (SCOT) Forecasting Team</p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
-              <p><strong>Company:</strong> University of British Columbia Human AI-Interaction Lab</p>
+              <p><strong>Company:</strong> University of British Columbia Human-AI Interaction Lab</p>
               <p><strong>Role:</strong> Research Assistant</p>
               <p><strong>Duration:</strong> January 2025 - April 2025</p>
-              <p><strong>Responsibilities:</strong> Research at the Human Artificial Intelligence Interaction Lab under Professor Cristina Conati. Working with Deep Learning and Eye Tracking Research. </p>
+              <p><strong>Responsibilities:</strong> Research at the Human Artificial Intelligence Interaction Lab under Cristina Conati. Working with Deep Learning and Eye Tracking Research. </p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
-              <p><strong>Company:</strong> University of British Columbia SLIME-lab</p>
+              <p><strong>Company:</strong> University of British Columbia SLIME-Lab</p>
               <p><strong>Role:</strong> Natural Language Processing Research Assistant</p>
               <p><strong>Duration:</strong> August 2024 - April 2025</p>
-              <p><strong>Responsibilities:</strong> Research at the SLIME-Lab under Professor Jian Zhu and funding via UBC Work Learn. Working on NLP and Computational Social Sciences Research. </p>
+              <p><strong>Responsibilities:</strong> Research at the SLIME-Lab under Jian Zhu and funding via UBC Work Learn. Working on NLP and Computational Social Sciences Research. </p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> United Nations</p>
@@ -138,6 +144,11 @@ const Experience: React.FC = () => {
           <div id="awards" className="bg-white shadow rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-4">Awards</h2>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
+                <p><strong>Award:</strong> Dean Scholar</p>
+                <p><strong>Year:</strong> 2025</p>
+                <p><strong>Details:</strong> Average of over 90% across 27 credits at UBC.</p>
+            </div>
+            <div className="border-l-4 border-gray-300 pl-4 mb-4">
                 <p><strong>Award:</strong> Tomlinson Engagement Award for Mentoring</p>
                 <p><strong>Year:</strong> 2024</p>
                 <p><strong>Details:</strong> Mentoring students in computer science at McGill.</p>
@@ -169,7 +180,7 @@ const Experience: React.FC = () => {
             <p><strong>Title:</strong> Analyzing Language Bias Between French and English in Conventional Multilingual Sentiment Analysis Models</p>
             <p><strong>Journal:</strong> arXiv</p>
             <p><strong>Year:</strong> 2024</p>
-            <p><strong>Details:</strong> Wrote a paper, with two citations, on bias in sentiment analysis machine learning models. </p>
+            <p><strong>Details:</strong> Wrote a paper, with four citations, on bias in sentiment analysis machine learning models. </p>
           </div>
 
           <div id="skills" className="bg-white shadow rounded-lg p-6">
