@@ -31,9 +31,15 @@ const Experience: React.FC = () => {
           <div id="experience" className="bg-white shadow rounded-lg p-6">
             <h2 className="text-2xl font-bold mb-4">Experience</h2>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
+              <p><strong>Company:</strong> Electronic Arts (EA)</p>
+              <p><strong>Role:</strong> AI Engineer Intern </p>
+              <p><strong>Duration:</strong> May 2026 - Present </p>
+              <p><strong>Responsibilities:</strong> Building AI Powered Developer Tools</p>
+            </div>
+            <div className="border-l-4 border-gray-300 pl-4 mb-4">
               <p><strong>Company:</strong> University of British Columbia SLIME-Lab</p>
               <p><strong>Role:</strong> Research Assistant</p>
-              <p><strong>Duration:</strong> August 2025 - Present </p>
+              <p><strong>Duration:</strong> August 2025 - April 2026 </p>
               <p><strong>Responsibilities:</strong> LLM Interpretability and Speech LLMs</p>
             </div>
             <div className="border-l-4 border-gray-300 pl-4 mb-4">
