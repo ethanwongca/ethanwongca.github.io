@@ -38,7 +38,7 @@ const professional: ExperienceEntry[] = [
     company: 'Electronic Arts',
     dates: 'May 2026 – Present',
     description:
-      'Building AI-powered developer tools to streamline game engine workflows and accelerate asset creation using large language models.',
+      'Building AI-powered developer tools to accelerate game development.',
     tags: ['LLMs', 'Developer Tools', 'Game AI'],
   },
   {
