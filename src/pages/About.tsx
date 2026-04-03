@@ -83,7 +83,7 @@ const About: React.FC = () => {
         {/* Bio */}
         <p className="text-2xl leading-relaxed text-gray-700 mb-7 max-w-4xl">
           MSc Candidate at the <strong>University of Toronto</strong>, researching culture and
-          LLMs. Currently, <strong>AI Engineer at Electronic Arts</strong>. Previously worked at{' '}
+          LLMs. Currently, an <strong>AI Engineer Intern at Electronic Arts</strong>. Previously worked at{' '}
           <strong>Amazon</strong> and the <strong>United Nations</strong>.
         </p>
 
