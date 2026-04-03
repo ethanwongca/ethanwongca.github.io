@@ -46,20 +46,16 @@ const professional: ExperienceEntry[] = [
     role: 'Business Intelligence Engineer Intern',
     company: 'Amazon',
     dates: 'May 2025 – Jul 2025',
-    description: 'Supply Chain Optimization Technologies (SCOT) Forecasting Team.',
-    bullets: [
-      'Launched a full-stack portal using React, Node.js, TypeScript, API Gateway, and AWS CDK to visualize forecast anomalies across millions of retail items, reducing root-cause discovery lead time by 80%.',
-      'Optimized vendor lead time visibility by developing ranking metrics and a scalable ETL pipeline using Redshift SQL and AWS Glue, reducing identification time of underperforming forecasts by 50%.',
-    ],
+    description: "Supply Chain Optimization Technologies (SCOT) Forecasting Team. Launched a full-stack portal to visualize Amazon internal ML's forecasts anomalies across millions of retail items.",
     tags: ['React', 'TypeScript', 'AWS CDK', 'Redshift', 'AWS Glue'],
   },
   {
     logo: unLogo,
     role: 'AI Fellow',
-    company: 'United Nations – OICT Innovation Unit',
+    company: 'United Nations Office of Information and Communications Technology',
     dates: 'May 2024 – Aug 2024',
     description:
-      'Developed AI tools and evaluated open-source generative AI models for sustainable development initiatives, focusing on data-driven agriculture forecasting.',
+      'Developed AI tools and evaluated open-source generative AI models for sustainable development goals (SDGs).',
     tags: ['Generative AI', 'Open Source', 'Policy'],
   },
   {
@@ -79,13 +75,13 @@ const research: ExperienceEntry[] = [
     company: 'University of Toronto – Cognitive Lexicon Lab',
     dates: 'Sep 2026 – Present',
     description:
-      'Investigating culture and language in LLMs under Dr. Yang Xu, exploring how large language models encode and reflect cultural norms and social biases.',
+      'Investigating culture and language in LLMs under Dr. Yang Xu.',
     tags: ['LLMs', 'Computational Social Science', 'Culture', 'MLLMs'],
   },
   {
     logo: ubcLogo,
     role: 'Research Assistant',
-    company: 'UBC SLIME-Lab',
+    company: 'University of British Columbia – SLIME-Lab',
     dates: 'Aug 2025 – Apr 2026',
     description:
       'Investigated the internal mechanisms of attention heads in Transformer architectures under Dr. Jian Zhu, enhancing transparency in high-stakes reasoning tasks. Worked on LLM interpretability and speech LLMs.',
@@ -94,7 +90,7 @@ const research: ExperienceEntry[] = [
   {
     logo: ubcLogo,
     role: 'Research Assistant',
-    company: 'UBC Human-AI Interaction Lab',
+    company: 'University of British Columbia – Human-AI Interaction Lab',
     dates: 'Jan 2025 – Apr 2025',
     description:
       'Focused on deep learning applications for eye tracking in collaborative coding environments under Dr. Cristina Conati.',
@@ -103,7 +99,7 @@ const research: ExperienceEntry[] = [
   {
     logo: ubcLogo,
     role: 'NLP Research Assistant',
-    company: 'UBC SLIME-Lab',
+    company: 'University of British Columbia – SLIME-Lab',
     dates: 'Aug 2024 – Apr 2025',
     description:
       'Conducted NLP and computational social science research under Dr. Jian Zhu, funded via UBC Work Learn.',

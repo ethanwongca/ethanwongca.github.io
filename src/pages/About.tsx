@@ -69,7 +69,7 @@ const About: React.FC = () => {
       {/* Main content */}
       <div className="flex-1 p-12 overflow-y-auto">
         {/* Name */}
-        <h1 className="text-7xl font-bold text-gray-900 mb-3">Ethan Parker Wong</h1>
+        <h1 className="text-6xl font-bold text-gray-900 mb-3">Ethan Parker Wong</h1>
 
         {/* Location */}
         <div className="flex items-center text-gray-500 text-2xl mb-4">
