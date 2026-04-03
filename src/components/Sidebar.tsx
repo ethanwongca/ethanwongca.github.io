@@ -11,7 +11,7 @@ const navLinkClass = ({ isActive }: { isActive: boolean }) =>
 
 const Sidebar: React.FC = () => (
   <div
-    className="fixed bg-white border-r border-gray-200 flex flex-col p-8 overflow-y-auto"
+    className="hidden md:flex fixed bg-white border-r border-gray-200 flex-col p-8 overflow-y-auto"
     style={{ width: '280px', height: '100vh', left: '0', top: '0' }}
   >
     {/* Profile */}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar';
+import MobileNav from '../components/MobileNav';
 import eaLogo from '../assets/ea.svg';
 import amazonLogo from '../assets/amazon.jpg';
 import unLogo from '../assets/un.png';
@@ -216,11 +217,11 @@ const SectionHeader: React.FC<{ title: string }> = ({ title }) => (
 
 const CV: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50" style={{ marginLeft: '280px' }}>
+    <div className="min-h-screen bg-gray-50 md:ml-[280px]">
       <Sidebar />
 
       {/* Main content */}
-      <div className="p-12 min-h-screen">
+      <div className="p-6 md:p-12 pb-24 md:pb-12 min-h-screen">
         <div className="max-w-3xl space-y-14">
           {/* Professional Experience */}
           <section>
@@ -253,6 +254,7 @@ const CV: React.FC = () => {
           </section>
         </div>
       </div>
+      <MobileNav />
     </div>
   );
 };
