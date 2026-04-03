@@ -11,8 +11,8 @@ const navLinkClass = ({ isActive }: { isActive: boolean }) =>
 
 const Sidebar: React.FC = () => (
   <div
-    className="bg-white border-r border-gray-200 flex flex-col p-8 flex-shrink-0"
-    style={{ width: '280px', minHeight: '100vh' }}
+    className="fixed bg-white border-r border-gray-200 flex flex-col p-8 overflow-y-auto"
+    style={{ width: '280px', height: '100vh', left: '0', top: '0' }}
   >
     {/* Profile */}
     <div className="text-center mb-6">

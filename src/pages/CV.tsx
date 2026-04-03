@@ -216,11 +216,11 @@ const SectionHeader: React.FC<{ title: string }> = ({ title }) => (
 
 const CV: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex">
+    <div className="min-h-screen bg-gray-50" style={{ marginLeft: '280px' }}>
       <Sidebar />
 
       {/* Main content */}
-      <div className="flex-1 p-12 overflow-y-auto">
+      <div className="p-12 min-h-screen">
         <div className="max-w-3xl space-y-14">
           {/* Professional Experience */}
           <section>

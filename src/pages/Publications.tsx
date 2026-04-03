@@ -4,11 +4,11 @@ import { FaRegFileAlt } from 'react-icons/fa';
 
 const Publications: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex">
+    <div className="min-h-screen bg-gray-50" style={{ marginLeft: '280px' }}>
       <Sidebar />
 
       {/* Main content */}
-      <div className="flex-1 p-12 overflow-y-auto">
+      <div className="p-12 min-h-screen">
         <div className="max-w-3xl">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Publications</h1>
           <p className="text-gray-400 text-base mb-10">

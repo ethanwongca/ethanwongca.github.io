@@ -63,11 +63,11 @@ const TypewriterText: React.FC = () => {
 
 const About: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex">
+    <div className="min-h-screen bg-gray-50" style={{ marginLeft: '280px' }}>
       <Sidebar />
 
       {/* Main content */}
-      <div className="flex-1 p-12 overflow-y-auto">
+      <div className="p-12 min-h-screen">
         {/* Name */}
         <h1 className="text-6xl font-bold text-gray-900 mb-3">Ethan Parker Wong</h1>
 
