@@ -52,7 +52,7 @@ const TypewriterText: React.FC = () => {
   }, [displayed, deleting, phraseIdx]);
 
   return (
-    <div className="flex items-center gap-2 text-base text-gray-500 mb-6 font-mono">
+    <div className="flex items-center gap-2 text-lg text-gray-500 mb-6 font-mono">
       <span className="text-blue-400">&gt;</span>
       <span>Looking for </span>
       <span className="text-blue-600 font-semibold">{displayed}</span>
@@ -69,10 +69,10 @@ const About: React.FC = () => {
       {/* Main content */}
       <div className="flex-1 p-12 overflow-y-auto">
         {/* Name */}
-        <h1 className="text-5xl font-bold text-gray-900 mb-3">Ethan Parker Wong</h1>
+        <h1 className="text-7xl font-bold text-gray-900 mb-3">Ethan Parker Wong</h1>
 
         {/* Location */}
-        <div className="flex items-center text-gray-500 text-lg mb-4">
+        <div className="flex items-center text-gray-500 text-2xl mb-4">
           <FaMapMarkerAlt className="mr-1.5" size={16} />
           <span>Vancouver, BC</span>
         </div>
@@ -101,7 +101,7 @@ const About: React.FC = () => {
         </div>
 
         {/* Recent Updates */}
-        <h3 className="text-sm uppercase tracking-widest text-gray-400 font-semibold mb-5">
+        <h3 className="text-base uppercase tracking-widest text-gray-400 font-semibold mb-5">
           Recent Updates
         </h3>
         <div className="space-y-6 mb-12">
@@ -113,17 +113,17 @@ const About: React.FC = () => {
                 }`}
               />
               <div>
-                <p className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-1">
+                <p className="text-base font-semibold text-gray-400 uppercase tracking-wide mb-1">
                   {update.date}
                 </p>
-                <p className="text-base text-gray-700">{update.text}</p>
+                <p className="text-lg text-gray-700">{update.text}</p>
               </div>
             </div>
           ))}
         </div>
 
         {/* Experience & Education */}
-        <h3 className="text-sm uppercase tracking-widest text-gray-400 font-semibold mb-6">
+        <h3 className="text-base uppercase tracking-widest text-gray-400 font-semibold mb-6">
           Experience &amp; Education
         </h3>
         <div className="flex items-center gap-10">

@@ -62,7 +62,6 @@ You can find the website here: [https://ethanwongca.github.io/](https://ethanwon
 ```plaintext
 ethanwongca.github.io/
 ├── public/
-│   ├── favicon.ico
 │   ├── index.html
 │   └── ...
 ├── src/

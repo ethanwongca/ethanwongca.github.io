@@ -175,11 +175,11 @@ const ExperienceCard: React.FC<{ entry: ExperienceEntry }> = ({ entry }) => (
     <LogoBadge logo={entry.logo} initials={entry.initials} initialsColor={entry.initialsColor} alt={entry.company} />
     <div className="flex-1 min-w-0">
       <div className="flex items-start justify-between gap-4 mb-1">
-        <h3 className="text-base font-bold text-gray-900">{entry.role}</h3>
-        <span className="text-sm text-gray-400 whitespace-nowrap flex-shrink-0">{entry.dates}</span>
+        <h3 className="text-lg font-bold text-gray-900">{entry.role}</h3>
+        <span className="text-base text-gray-400 whitespace-nowrap flex-shrink-0">{entry.dates}</span>
       </div>
-      <p className="text-sm text-gray-500 mb-2">{entry.company}</p>
-      <p className="text-sm text-gray-600 leading-relaxed mb-3">{entry.description}</p>
+      <p className="text-base text-gray-500 mb-2">{entry.company}</p>
+      <p className="text-base text-gray-600 leading-relaxed mb-3">{entry.description}</p>
       {entry.bullets && (
         <ul className="list-disc list-outside ml-4 space-y-1.5 mb-3">
           {entry.bullets.map((b) => (
@@ -205,17 +205,17 @@ const EducationCard: React.FC<{ entry: EducationEntry }> = ({ entry }) => (
     <LogoBadge logo={entry.logo} initials={entry.initials} initialsColor={entry.initialsColor} alt={entry.institution} />
     <div className="flex-1">
       <div className="flex items-start justify-between gap-4 mb-1">
-        <h3 className="text-base font-bold text-gray-900">{entry.degree}</h3>
-        <span className="text-sm text-gray-400 whitespace-nowrap flex-shrink-0">{entry.dates}</span>
+        <h3 className="text-lg font-bold text-gray-900">{entry.degree}</h3>
+        <span className="text-base text-gray-400 whitespace-nowrap flex-shrink-0">{entry.dates}</span>
       </div>
-      <p className="text-sm text-gray-500 mb-1">{entry.institution}</p>
-      {entry.detail && <p className="text-xs text-gray-400">{entry.detail}</p>}
+      <p className="text-base text-gray-500 mb-1">{entry.institution}</p>
+      {entry.detail && <p className="text-sm text-gray-400">{entry.detail}</p>}
     </div>
   </div>
 );
 
 const SectionHeader: React.FC<{ title: string }> = ({ title }) => (
-  <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">{title}</h2>
+  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">{title}</h2>
 );
 
 const CV: React.FC = () => {
