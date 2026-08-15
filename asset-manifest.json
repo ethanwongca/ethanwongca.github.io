@@ -1,21 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.c02c8202.css",
-    "main.js": "/static/js/main.7afe8a67.js",
-    "static/js/453.aa76968d.chunk.js": "/static/js/453.aa76968d.chunk.js",
+    "main.css": "/static/css/main.a23d6f73.css",
+    "main.js": "/static/js/main.7588910c.js",
+    "static/js/262.fb53e837.chunk.js": "/static/js/262.fb53e837.chunk.js",
+    "static/js/163.cb05cfc1.chunk.js": "/static/js/163.cb05cfc1.chunk.js",
+    "static/js/453.37ae3fc4.chunk.js": "/static/js/453.37ae3fc4.chunk.js",
+    "static/js/290.c0068a72.chunk.js": "/static/js/290.c0068a72.chunk.js",
+    "static/js/639.cd563335.chunk.js": "/static/js/639.cd563335.chunk.js",
     "static/media/headshot.jpg": "/static/media/headshot.3ff2840a66b735a25e7c.jpg",
     "static/media/un.png": "/static/media/un.4e170c4ec4ccf3fafbbc.png",
+    "static/media/mchacks.png": "/static/media/mchacks.f2a0afa5b241d988f377.png",
     "static/media/utoronto.png": "/static/media/utoronto.159ea8affde30fdee03c.png",
+    "static/media/csus.webp": "/static/media/csus.7689c84b4f6a74d960da.webp",
     "static/media/ubc.png": "/static/media/ubc.9d54b2f5c36ca2f44154.png",
     "static/media/mcgill.webp": "/static/media/mcgill.570105b5b473f4edbe1d.webp",
     "index.html": "/index.html",
     "static/media/ea.svg": "/static/media/ea.8743a34ca8839730924f3b910583ffcc.svg",
-    "main.c02c8202.css.map": "/static/css/main.c02c8202.css.map",
-    "main.7afe8a67.js.map": "/static/js/main.7afe8a67.js.map",
-    "453.aa76968d.chunk.js.map": "/static/js/453.aa76968d.chunk.js.map"
+    "main.a23d6f73.css.map": "/static/css/main.a23d6f73.css.map",
+    "main.7588910c.js.map": "/static/js/main.7588910c.js.map",
+    "262.fb53e837.chunk.js.map": "/static/js/262.fb53e837.chunk.js.map",
+    "163.cb05cfc1.chunk.js.map": "/static/js/163.cb05cfc1.chunk.js.map",
+    "453.37ae3fc4.chunk.js.map": "/static/js/453.37ae3fc4.chunk.js.map",
+    "290.c0068a72.chunk.js.map": "/static/js/290.c0068a72.chunk.js.map",
+    "639.cd563335.chunk.js.map": "/static/js/639.cd563335.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c02c8202.css",
-    "static/js/main.7afe8a67.js"
+    "static/css/main.a23d6f73.css",
+    "static/js/main.7588910c.js"
   ]
 }
