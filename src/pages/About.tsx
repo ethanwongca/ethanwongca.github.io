@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
+import React from 'react';
+import { FaLinkedin, FaGithub, FaMapMarkerAlt } from 'react-icons/fa';
 import { SiGooglescholar } from 'react-icons/si';
 import Sidebar from '../components/Sidebar';
 import MobileNav from '../components/MobileNav';
+import PageHeader from '../components/PageHeader';
 import headshot from '../assets/headshot.jpg';
 import amazonLogo from '../assets/amazon.jpg';
 import eaLogo from '../assets/ea.svg';
@@ -13,72 +14,45 @@ import utorontoLogo from '../assets/utoronto.png';
 const updates = [
   { date: 'September 2026', text: 'Joining the Cognitive Lexicon Lab at the University of Toronto', active: true },
   { date: 'May 2026', text: 'Starting as an AI Engineer at Electronic Arts', active: false },
-  { date: 'July 2025', text: 'Ended Internship at Amazon SCOT Forecasting', active: false },
+  { date: 'May 2026', text: 'Graduated from the University of British Columbia', active: false },
 ];
 
 const partnerLogos = [
-  { src: utorontoLogo, alt: 'University of Toronto' },
-  { src: eaLogo, alt: 'Electronic Arts' },
-  { src: amazonLogo, alt: 'Amazon' },
-  { src: unLogo, alt: 'United Nations' },
-  { src: ubcLogo, alt: 'UBC' },
+  { src: utorontoLogo, alt: 'University of Toronto', url: 'https://web.cs.toronto.edu/' },
+  { src: eaLogo, alt: 'Electronic Arts', url: 'https://www.ea.com/en-ca/careers/teams/technology' },
+  { src: amazonLogo, alt: 'Amazon', url: 'https://www.amazon.science/tag/supply-chain-optimization-technologies' },
+  { src: unLogo, alt: 'United Nations', url: 'https://unite.un.org/en' },
+  { src: ubcLogo, alt: 'UBC', url: 'https://www.cs.ubc.ca/' },
 ];
-
-const phrases = [
-  'LLM research opportunities',
-  'AI engineering roles',
-  'ML research collaborations',
-  'impactful NLP projects',
-];
-
-const TypewriterText: React.FC = () => {
-  const [phraseIdx, setPhraseIdx] = useState(0);
-  const [displayed, setDisplayed] = useState('');
-  const [deleting, setDeleting] = useState(false);
-
-  useEffect(() => {
-    const current = phrases[phraseIdx];
-    let timeout: ReturnType<typeof setTimeout>;
-
-    if (!deleting && displayed.length < current.length) {
-      timeout = setTimeout(() => setDisplayed(current.slice(0, displayed.length + 1)), 60);
-    } else if (!deleting && displayed.length === current.length) {
-      timeout = setTimeout(() => setDeleting(true), 1800);
-    } else if (deleting && displayed.length > 0) {
-      timeout = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 35);
-    } else {
-      setDeleting(false);
-      setPhraseIdx((prev) => (prev + 1) % phrases.length);
-    }
-
-    return () => clearTimeout(timeout);
-  }, [displayed, deleting, phraseIdx]);
-
-  return (
-    <div className="flex items-center gap-2 text-base md:text-lg text-gray-500 mb-6 font-mono">
-      <span className="text-blue-400">&gt;</span>
-      <span>Looking for </span>
-      <span className="text-blue-600 font-semibold">{displayed}</span>
-      <span className="animate-pulse text-blue-400">|</span>
-    </div>
-  );
-};
 
 const About: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 md:ml-[280px]">
       <Sidebar />
 
-      {/* Mobile profile header */}
-      <div className="md:hidden bg-white border-b border-gray-200 px-6 pt-8 pb-6 text-center">
+      {/* Cover banner – full width, no box, fades into the page below */}
+      <PageHeader />
+
+      {/* Name – directly underneath the banner, hidden on mobile since it's
+          in the profile header below */}
+      <div className="hidden md:block px-12 pt-4">
+        <h1 className="text-6xl font-bold text-gray-900">Ethan Parker Wong</h1>
+      </div>
+
+      {/* Mobile profile header – avatar overlaps the banner's bottom edge */}
+      <div className="md:hidden bg-white border-b border-gray-200 px-6 pb-6 text-center">
         <img
           src={headshot}
           alt="Ethan Wong"
-          className="w-28 h-28 rounded-full object-cover mx-auto mb-4 shadow-md"
+          className="w-28 h-28 rounded-full object-cover mx-auto -mt-14 mb-4 shadow-md ring-4 ring-white relative z-10"
         />
         <h2 className="font-bold text-xl text-gray-800">Ethan Wong</h2>
-        <p className="text-xs text-gray-400 uppercase tracking-widest mt-1 mb-4">
-          AI Engineer &amp; Researcher
+        <p className="text-xs text-gray-400 uppercase tracking-widest mt-1">
+          ML Engineer and Researcher
+        </p>
+        <p className="flex items-center justify-center gap-1.5 text-base text-gray-400 mt-1.5 mb-4">
+          <FaMapMarkerAlt size={16} />
+          <span>Toronto, ON</span>
         </p>
         <div className="flex justify-center space-x-5 text-gray-400">
           <a href="https://www.linkedin.com/in/ethanwongca/" target="_blank" rel="noreferrer" className="hover:text-blue-600 transition-colors">
@@ -94,36 +68,29 @@ const About: React.FC = () => {
       </div>
 
       {/* Main content */}
-      <div className="p-6 md:p-12 pb-24 md:pb-12 min-h-screen">
-        {/* Name – hidden on mobile since it's in the profile header */}
-        <h1 className="hidden md:block text-6xl font-bold text-gray-900 mb-3">Ethan Parker Wong</h1>
-
-        {/* Location */}
-        <div className="flex items-center text-gray-500 text-base md:text-2xl mb-4">
-          <FaMapMarkerAlt className="mr-1.5" size={14} />
-          <span>Vancouver, BC</span>
-        </div>
-
-        {/* Typewriter */}
-        <TypewriterText />
+      <div className="px-6 md:px-12 pt-6 pb-24 md:pb-12">
+        {/* Location – hidden on mobile since it's in the profile header */}
+        <p className="hidden md:flex items-center gap-2 text-lg text-gray-500 mb-5 font-medium">
+          <FaMapMarkerAlt size={20} />
+          <span>Toronto, ON</span>
+        </p>
 
         {/* Bio */}
         <p className="text-base md:text-2xl leading-relaxed text-gray-700 mb-7 max-w-4xl">
           MSc Candidate at the <strong>University of Toronto</strong>, researching culture and
-          LLMs. Currently, an <strong>AI Engineer Intern at Electronic Arts</strong>. Previously worked at{' '}
-          <strong>Amazon</strong> and the <strong>United Nations</strong>.
+          LLMs. Previously worked as an AI Engineer at <strong>Electronic Arts</strong>, BI Engineer at <strong>Amazon</strong>, and an AI Fellow at the <strong>United Nations</strong>.
         </p>
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 md:gap-3 mb-10">
           <span className="bg-green-100 text-green-800 text-xs md:text-sm font-semibold px-3 md:px-4 py-1.5 rounded-sm uppercase tracking-wide">
-            AI Engineer Intern @ EA
+            Prev AI Engineer Intern @ EA
           </span>
           <span className="bg-blue-100 text-blue-700 text-xs md:text-sm font-semibold px-3 md:px-4 py-1.5 rounded-sm uppercase tracking-wide">
             MSc Candidate @ UofT
           </span>
           <span className="bg-orange-100 text-orange-700 text-xs md:text-sm font-semibold px-3 md:px-4 py-1.5 rounded-sm uppercase tracking-wide">
-            Former Amazon Intern
+            Prev BI Engineer Intern @ Amazon
           </span>
         </div>
 
@@ -155,12 +122,13 @@ const About: React.FC = () => {
         </h3>
         <div className="flex flex-wrap items-center gap-6 md:gap-10">
           {partnerLogos.map((logo) => (
-            <img
-              key={logo.alt}
-              src={logo.src}
-              alt={logo.alt}
-              className="h-8 md:h-10 w-auto object-contain opacity-50 grayscale"
-            />
+            <a key={logo.alt} href={logo.url} target="_blank" rel="noreferrer">
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                className="h-8 md:h-10 w-auto object-contain opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+              />
+            </a>
           ))}
         </div>
       </div>

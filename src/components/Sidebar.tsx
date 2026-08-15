@@ -1,11 +1,27 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import headshot from '../assets/headshot.jpg';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import {
+  FaLinkedin,
+  FaGithub,
+  FaUser,
+  FaBriefcase,
+  FaRegFileAlt,
+  FaChalkboardTeacher,
+  FaPuzzlePiece,
+} from 'react-icons/fa';
 import { SiGooglescholar } from 'react-icons/si';
 
+const navItems = [
+  { to: '/', end: true, label: 'Overview', icon: FaUser },
+  { to: '/experience', end: false, label: 'Experience', icon: FaBriefcase },
+  { to: '/publications', end: false, label: 'Publications', icon: FaRegFileAlt },
+  { to: '/teaching', end: false, label: 'Teaching', icon: FaChalkboardTeacher },
+  { to: '/side-quests', end: false, label: 'Side Quests', icon: FaPuzzlePiece },
+];
+
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
-  `flex items-center px-3 py-2.5 rounded-md text-base font-medium transition-colors ${
+  `flex items-center gap-3 px-3 py-2.5 rounded-md text-base font-medium transition-colors ${
     isActive ? 'bg-blue-50 text-blue-700' : 'text-gray-600 hover:bg-gray-50'
   }`;
 
@@ -23,7 +39,7 @@ const Sidebar: React.FC = () => (
       />
       <h2 className="font-bold text-xl text-gray-800">Ethan Wong</h2>
       <p className="text-xs text-gray-400 uppercase tracking-widest mt-1">
-        AI Engineer &amp; Researcher
+        ML Engineer and Researcher
       </p>
     </div>
 
@@ -45,9 +61,22 @@ const Sidebar: React.FC = () => (
 
     {/* Navigation */}
     <nav className="flex-1 space-y-1">
-      <NavLink to="/" end className={navLinkClass}>Overview</NavLink>
-      <NavLink to="/cv" className={navLinkClass}>Experience</NavLink>
-      <NavLink to="/publications" className={navLinkClass}>Publications</NavLink>
+      {navItems.map(({ to, end, label, icon: Icon }) => (
+        <NavLink key={to} to={to} end={end} className={navLinkClass}>
+          {({ isActive }) => (
+            <>
+              <span
+                className={`flex items-center justify-center w-8 h-8 rounded-lg flex-shrink-0 transition-colors ${
+                  isActive ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-500'
+                }`}
+              >
+                <Icon size={15} />
+              </span>
+              {label}
+            </>
+          )}
+        </NavLink>
+      ))}
     </nav>
   </div>
 );
