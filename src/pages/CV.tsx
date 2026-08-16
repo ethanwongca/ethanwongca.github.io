@@ -225,7 +225,7 @@ const EducationCard: React.FC<{ entry: EducationEntry }> = ({ entry }) => (
 );
 
 const SectionHeader: React.FC<{ title: string }> = ({ title }) => (
-  <h2 className="text-3xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">{title}</h2>
+  <h2 className="text-4xl font-bold text-gray-900 mb-6 pb-3 border-b border-gray-200">{title}</h2>
 );
 
 const CV: React.FC = () => {
@@ -236,13 +236,8 @@ const CV: React.FC = () => {
       {/* Cover banner – full width, fades into the page below */}
       <PatternHeader variant="circles" />
 
-      {/* Title – directly underneath the banner */}
-      <div className="px-6 md:px-12 pt-4">
-        <h1 className="text-4xl font-bold text-gray-900">Experience</h1>
-      </div>
-
       {/* Main content */}
-      <div className="px-6 md:px-12 pt-6 pb-24 md:pb-12 min-h-screen">
+      <div className="px-6 md:px-12 pt-2 pb-24 md:pb-12 min-h-screen">
         <div className="max-w-3xl space-y-14">
           {/* Professional Experience */}
           <section>

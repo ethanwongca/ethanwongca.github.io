@@ -32,7 +32,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "optimize-photos": "node scripts/optimize-photos.js",
+    "predeploy": "npm run optimize-photos && npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -68,6 +69,7 @@
     "autoprefixer": "^10.4.19",
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
+    "sharp": "^0.35.3",
     "tailwindcss": "^3.4.3"
   }
 }

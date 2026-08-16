@@ -27,7 +27,7 @@ const teaching: TeachingEntry[] = [
     logo: utorontoLogo,
     url: 'https://web.cs.toronto.edu/',
     brandColor: '#002F65',
-    term: 'Fall 2026 (Sept 2026 – Dec 2026)',
+    term: 'Fall 2026',
     description: "Hosting tutorials for the University of Toronto's introductory CS course.",
   },
   {
@@ -36,7 +36,7 @@ const teaching: TeachingEntry[] = [
     logo: mcgillLogo,
     url: 'https://www.cs.mcgill.ca/',
     brandColor: '#ED1B2F',
-    term: 'Winter 2024 (Jan 2024 – Apr 2024)',
+    term: 'Winter 2024',
     description: 'Hosted office hours for COMP 202, 250, and 206.',
   },
 ];

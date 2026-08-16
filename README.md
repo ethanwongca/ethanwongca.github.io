@@ -2,13 +2,14 @@
 
 Hello, welcome to my portfolio website's code! I hope you enjoyed my website!
 
-## Table of Conents
+## Table of Contents
 1. [Website](#website)
 2. [Libraries](#libraries-used)
 3. [Features](#features)
 4. [Setup](#setup)
-5. [Structure](#folder-structure)
-6. [Pages](#pages)
+5. [Photos](#photos)
+6. [Structure](#folder-structure)
+7. [Pages](#pages)
 
 ## Website
 You can find the website here: [https://ethanwongca.github.io/](https://ethanwongca.github.io/)
@@ -19,10 +20,11 @@ You can find the website here: [https://ethanwongca.github.io/](https://ethanwon
 **Technologies**: React.js, Tailwind CSS, Node.js 
 
 ## Features
-- Responsive design
-- Dynamic content fetching from GitHub API
+- Responsive design, with a desktop sidebar and a mobile bottom nav
 - Interactive UI with Tailwind CSS
-- Real-time updates of GitHub repositories
+- An interactive world map of visited countries, with a pin per travel photo
+- Draggable sticky-note and polaroid galleries on the Hobbies side quests
+- Photo pipeline that downscales images and strips EXIF/GPS metadata before deploy
 
 ## Setup
 
@@ -57,24 +59,47 @@ You can find the website here: [https://ethanwongca.github.io/](https://ethanwon
     npm run deploy
     ```
 
+    `predeploy` runs `optimize-photos` first, so every image is downscaled and
+    stripped of EXIF/GPS metadata before it ever reaches the build. Photos that
+    are already optimized are left untouched, so repeated deploys don't
+    re-compress them.
+
+## Photos
+
+Drop new photos straight into `src/assets/travel`, `running`, `sports`, or
+`fun-eats` — they're picked up automatically by `require.context`, no imports
+needed. Then run:
+
+```bash
+npm run optimize-photos
+```
+
+For travel photos, also add the location to `src/data/travelLocations.ts`; the
+gallery caption and the map pin both read from that one entry. The script is
+macOS-only (it uses `sips` for HDR-correct color decoding).
+
 ## Folder Structure
 
 ```plaintext
 ethanwongca.github.io/
 ├── public/
 │   ├── index.html
+│   ├── 404.html          # SPA redirect shim for GitHub Pages
 │   └── ...
+├── scripts/
+│   └── optimize-photos.js
 ├── src/
-│   ├── assets/
-│   │   └── headshot.jpg
-│   ├── components/
-│   │   └── Header.tsx
+│   ├── assets/           # headshot, logos, and the photo folders
+│   ├── components/       # Sidebar, MobileNav, WorldMap, galleries, ...
+│   ├── data/             # nav items + travel locations
 │   ├── pages/
 │   │   ├── About.tsx
 │   │   ├── CV.tsx
 │   │   ├── Publications.tsx
-│   │   ├── Projects.tsx
-│   │   └── Socials.tsx
+│   │   ├── Teaching.tsx
+│   │   ├── Hobbies.tsx
+│   │   ├── SideQuestDetail.tsx
+│   │   └── NotFound.tsx
 │   ├── App.tsx
 │   ├── index.css
 │   └── index.tsx
@@ -95,8 +120,9 @@ ethanwongca.github.io/
 ### Publications
 - **Publication Entries**: Include entries with publication title, journal name, link to publication, and a brief description
 
-### Projects
-- **Project**: Updates realtime using GitHub's API to fetch the latest project data dynamically.
+### Teaching
+- **Teaching & Workshops**: Courses taught and workshops run, each linking out to the institution or repo
 
-### Socials
-- **Links**: Provides clickable cards for email, LinkedIn, GitHub, and Google Scholar
+### Hobbies
+- **Corkboard**: Draggable sticky notes, one per theme, each opening its own side-quest page
+- **Side quests**: Travel (world map + polaroid galleries), Running (race route + photos), Sports, and Fun Eats (a flip-card menu)

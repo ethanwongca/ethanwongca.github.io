@@ -11,10 +11,11 @@ import ubcLogo from '../assets/ubc.png';
 import unLogo from '../assets/un.png';
 import utorontoLogo from '../assets/utoronto.png';
 
+// Newest first — the first entry renders with the highlighted dot.
 const updates = [
-  { date: 'September 2026', text: 'Joining the Cognitive Lexicon Lab at the University of Toronto', active: true },
-  { date: 'May 2026', text: 'Starting as an AI Engineer at Electronic Arts', active: false },
-  { date: 'May 2026', text: 'Graduated from the University of British Columbia', active: false },
+  { date: 'September 2026', text: 'Joining the Cognitive Lexicon Lab at the University of Toronto' },
+  { date: 'August 2026', text: 'Ending AI Engineer Internship at Electronic Arts' },
+  { date: 'May 2026', text: 'Graduated from the University of British Columbia' },
 ];
 
 const partnerLogos = [
@@ -47,9 +48,7 @@ const About: React.FC = () => {
           className="w-28 h-28 rounded-full object-cover mx-auto -mt-14 mb-4 shadow-md ring-4 ring-white relative z-10"
         />
         <h2 className="font-bold text-xl text-gray-800">Ethan Wong</h2>
-        <p className="text-xs text-gray-400 uppercase tracking-widest mt-1">
-          ML Engineer and Researcher
-        </p>
+        <p className="text-sm text-gray-400 mt-1">ML Engineer and Researcher</p>
         <p className="flex items-center justify-center gap-1.5 text-base text-gray-400 mt-1.5 mb-4">
           <FaMapMarkerAlt size={16} />
           <span>Toronto, ON</span>
@@ -100,7 +99,7 @@ const About: React.FC = () => {
         </h3>
         <div className="space-y-6 mb-12">
           {updates.map((update, idx) => (
-            <div key={idx} className="flex items-start gap-4">
+            <div key={update.date} className="flex items-start gap-4">
               <div
                 className={`mt-2 w-2.5 h-2.5 rounded-full flex-shrink-0 ${
                   idx === 0 ? 'bg-blue-500' : 'bg-gray-300'

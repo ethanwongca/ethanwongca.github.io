@@ -24,8 +24,8 @@ const App: React.FC = () => {
           <Route path="/experience" element={<CV />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/teaching" element={<Teaching />} />
-          <Route path="/side-quests" element={<Hobbies />} />
-          <Route path="/side-quests/:topic" element={<SideQuestDetail />} />
+          <Route path="/hobbies" element={<Hobbies />} />
+          <Route path="/hobbies/:topic" element={<SideQuestDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

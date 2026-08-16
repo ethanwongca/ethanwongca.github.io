@@ -1,59 +1,91 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { FaArrowLeft, FaTools } from 'react-icons/fa';
+import { FaArrowLeft } from 'react-icons/fa';
 import Sidebar from '../components/Sidebar';
 import MobileNav from '../components/MobileNav';
+import PatternHeader from '../components/PatternHeader';
 import WorldMap from '../components/WorldMap';
+import RaceTrack from '../components/RaceTrack';
+import SportsList from '../components/SportsList';
+import FunEatsList from '../components/FunEatsList';
+import PhotoGallery from '../components/PhotoGallery';
 
 const TITLES: Record<string, string> = {
   travel: 'Travel',
   running: 'Running',
-  soccer: 'Soccer',
-  ultimate: 'Ultimate',
-  taekwondo: 'Taekwondo',
-  drawing: 'Drawing',
-  woodworking: 'Woodworking',
-  cinema: 'Cinema & Acting',
+  sports: 'Sports',
+  'fun-eats': 'Fun Eats',
 };
 
-const UnderConstruction: React.FC = () => (
-  <div className="flex flex-col items-center justify-center py-24 text-gray-300">
-    <FaTools size={52} className="mb-4" />
-    <p className="text-lg italic">Under construction</p>
-  </div>
-);
+// Sports and Fun Eats carry their own title/masthead inside their
+// components now, so no generic subtitle line for those.
+const SUBTITLES: Record<string, string> = {
+  running: '5 half-marathons in the books, first full marathon incoming.',
+};
 
 const SideQuestDetail: React.FC = () => {
   const { topic = '' } = useParams<{ topic: string }>();
   const title = TITLES[topic];
 
+  // Travel gets the full page width (map + polaroids need the room) and a
+  // faint canvas-grid backdrop instead of the plain gray page, so it reads
+  // as an explorer's board rather than a form page with a map embedded.
+  const isTravel = topic === 'travel';
+  // Fun Eats' flip card is the page — no separate title above it, just the
+  // back link, so the card itself can take up the rest of the screen.
+  const isFunEats = topic === 'fun-eats';
+  // Running and Sports are plain detail pages, so they get the same
+  // cover-banner treatment as About/CV/Publications/Teaching instead of
+  // just a title.
+  const isRunning = topic === 'running';
+  const isSports = topic === 'sports';
+
   return (
-    <div className="min-h-screen bg-gray-50 md:ml-[280px]">
+    <div className={`min-h-screen md:ml-[280px] ${isTravel ? 'bg-gray-50 dot-grid-bg' : 'bg-gray-50'}`}>
       <Sidebar />
 
-      {/* No banner here — it's a quick detail page, doesn't need the animation */}
-      <div className="px-6 md:px-12 pt-8 md:pt-10">
-        <Link to="/side-quests" className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-blue-600 transition-colors mb-2">
+      {isRunning && <PatternHeader variant="lines" accent="#f97316" bg="#fff7ed" />}
+      {isSports && <PatternHeader variant="lines-cross" accent="#111827" bg="#f9fafb" />}
+
+      <div className={`px-6 md:px-12 ${isRunning || isSports ? 'pt-4' : 'pt-8 md:pt-10'}`}>
+        <Link
+          to="/hobbies"
+          className={`inline-flex items-center gap-2 text-sm text-gray-500 hover:text-blue-600 transition-colors ${isFunEats ? '' : 'mb-2'}`}
+        >
           <FaArrowLeft size={12} />
-          Side Quests
+          Hobbies
         </Link>
-        <h1 className="text-4xl font-bold text-gray-900">{title ?? 'Not found'}</h1>
+        {!isFunEats && <h1 className="text-4xl font-bold text-gray-900">{title ?? 'Not found'}</h1>}
       </div>
 
       {/* Main content */}
-      <div className="px-6 md:px-12 pt-6 pb-24 md:pb-12">
-        <div className="max-w-4xl">
-          {!title && <p className="text-gray-500">That side quest doesn't exist.</p>}
-          {topic === 'travel' && (
-            <>
-              <p className="text-base text-gray-500 mb-4">34 countries visited so far.</p>
-              <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-6">
-                <WorldMap />
+      <div className={`px-6 md:px-12 pb-24 md:pb-12 ${isFunEats ? 'pt-4' : 'pt-6'}`}>
+        {!title && <p className="text-gray-500">That side quest doesn't exist.</p>}
+
+        {isTravel && (
+          <div className="space-y-8">
+            <PhotoGallery folder="travel" only="even" emptyLabel="Polaroids coming soon" />
+            <WorldMap />
+            <PhotoGallery folder="travel" only="odd" emptyLabel="Polaroids coming soon" />
+          </div>
+        )}
+
+        {isFunEats && <FunEatsList />}
+
+        {title && !isTravel && !isFunEats && (
+          <div className="max-w-4xl">
+            {SUBTITLES[topic] && <p className="text-base text-gray-500 mb-6">{SUBTITLES[topic]}</p>}
+
+            {topic === 'running' && (
+              <div className="space-y-8">
+                <RaceTrack />
+                <PhotoGallery folder="running" emptyLabel="Race photos coming soon" />
               </div>
-            </>
-          )}
-          {title && topic !== 'travel' && <UnderConstruction />}
-        </div>
+            )}
+
+            {topic === 'sports' && <SportsList />}
+          </div>
+        )}
       </div>
       <MobileNav />
     </div>
