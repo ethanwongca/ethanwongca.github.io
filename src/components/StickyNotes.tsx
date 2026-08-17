@@ -15,7 +15,7 @@ const NOTES: QuestNote[] = [
   { id: 'travel', label: 'Travel', sublabel: '34 countries', color: '#f59e0b', rotation: -4 },
   { id: 'running', label: 'Running', sublabel: '5 halfs · 1 full incoming', color: '#ef4444', rotation: 3 },
   { id: 'sports', label: 'Sports', color: '#ec4899', rotation: -2 },
-  { id: 'fun-eats', label: 'Fun Eats', color: '#14b8a6', rotation: -3 },
+  { id: 'fun-eats', label: 'Recs by Me', color: '#14b8a6', rotation: -3 },
 ];
 
 // A small movement threshold below which a pointerdown+up counts as a click

@@ -2,19 +2,17 @@ import React, { useRef, useState } from 'react';
 import { FaCamera } from 'react-icons/fa';
 import { TRAVEL_LOCATIONS } from '../data/travelLocations';
 
-type Folder = 'travel' | 'running' | 'fun-eats';
+type Folder = 'travel' | 'running';
 
 // Each context call needs a literal path (webpack resolves it at build
 // time), so one call per folder rather than a dynamic path — drop a photo
 // into src/assets/<folder>/ and it shows up here with no code change.
 const travelCtx = require.context('../assets/travel', false, /\.(png|jpe?g|webp)$/i);
 const runningCtx = require.context('../assets/running', false, /\.(png|jpe?g|webp)$/i);
-const funEatsCtx = require.context('../assets/fun-eats', false, /\.(png|jpe?g|webp)$/i);
 
 const CONTEXTS: Record<Folder, RequireContext> = {
   travel: travelCtx,
   running: runningCtx,
-  'fun-eats': funEatsCtx,
 };
 
 // Caption per photo, keyed by filename (no extension) — travel captions
